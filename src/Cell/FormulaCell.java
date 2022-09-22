@@ -49,6 +49,7 @@ public class FormulaCell extends Cell<Double>{
             return true;
         return false;
     }
+
     /**
      * @param string stringa contenente il numero
      * @return  true se value è double
@@ -61,6 +62,7 @@ public class FormulaCell extends Cell<Double>{
         } catch (Exception e) { return false; }
         
     }
+
     /**
      * verifica stringa sommabile
      * @param s stringa 
@@ -86,7 +88,6 @@ public class FormulaCell extends Cell<Double>{
                             return true;
                         } catch (Exception e) {}                        
                     }
-    
                     return false;
                 } catch (Exception e) {
                     return false;
@@ -124,9 +125,10 @@ public class FormulaCell extends Cell<Double>{
                 return false;
             
                 if(value.contains("+"))
-                operator = OperType.Addition;
-            else   
-                operator = OperType.Subtraction; 
+                    operator = OperType.Addition;
+                    
+                else   
+                    operator = OperType.Subtraction; 
             
                 for (String x : parts) 
                     if(!isValueValid(x))

@@ -1,13 +1,11 @@
 package Cell;
 
-import java.io.Serializable;
-
 /**
  * Title: Cell
  * Classe astratta per specializzare i tipi di informazione che possono contenere le celle
  */
 
-public abstract class Cell<TypeofCellData> implements Serializable{
+public abstract class Cell<TypeofCellData>{
     
     int row;
     int col;

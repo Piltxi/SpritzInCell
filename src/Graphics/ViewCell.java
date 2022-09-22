@@ -16,7 +16,6 @@ public class ViewCell extends JTextField{
     public ViewCell (Cell<?>[][] matrixCells) {
         
         super();
-        
         this.matrixCells = matrixCells;
         setColumns(30);
         setEditable(false);
